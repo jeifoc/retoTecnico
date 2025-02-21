@@ -20,6 +20,11 @@ public class AnimalService {
 				final String name = data[0].trim();
 				final String animalType = data[1].toUpperCase().trim();
 				final String sound = data[2].trim();
+				
+				if (name.isEmpty() || animalType.isEmpty() ||sound.isEmpty()) {
+	                continue;
+	            }
+				
 				try {
 					AnimalType animalTypeFormatted = AnimalType.valueOf(animalType);
 					switch (animalTypeFormatted) {
