@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.entelgy</groupId>
 	<artifactId>retoTecnicoEntelgy</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1</version>
 	<name>Solucion de reto tecnico</name>
 	<dependencies>
 		<dependency>
