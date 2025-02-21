@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import retoTecnicoEntelgy.models.abstracts.Animal;
-import retoTecnicoEntelgy.models.base.AnimalAcuatico;
-import retoTecnicoEntelgy.models.enums.AnimalType;
-import retoTecnicoEntely.services.AnimalService;
+import retoTecnicoEntelgy.services.AnimalService;
 
 public class App {
 

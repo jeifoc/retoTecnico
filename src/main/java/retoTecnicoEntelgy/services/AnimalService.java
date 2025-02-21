@@ -1,4 +1,4 @@
-package retoTecnicoEntely.services;
+package retoTecnicoEntelgy.services;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,15 +9,17 @@ import retoTecnicoEntelgy.models.base.AnimalTerrestre;
 import retoTecnicoEntelgy.models.base.AnimalVolador;
 import retoTecnicoEntelgy.models.enums.AnimalType;
 
+
 public class AnimalService {
 	public static List<Animal> crearAnimales(List<String> input) {
+		List<String> inputCopy = List.copyOf(input);
 		List<Animal> animalsOutput = new ArrayList<Animal>();
-		for (String singleAnimal : input) {
+		for (String singleAnimal : inputCopy) {
 			String[] data = singleAnimal.split("\\|");
 			if (data.length == 3) {
-				String name = data[0].trim();
-				String animalType = data[1].toUpperCase().trim();
-				String sound = data[2].trim();
+				final String name = data[0].trim();
+				final String animalType = data[1].toUpperCase().trim();
+				final String sound = data[2].trim();
 				try {
 					AnimalType animalTypeFormatted = AnimalType.valueOf(animalType);
 					switch (animalTypeFormatted) {
